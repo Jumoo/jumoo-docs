@@ -1,0 +1,70 @@
+{
+  "version.label": {
+    "message": "v9.x - Umbraco 9",
+    "description": "The label for version 9.x"
+  },
+  "sidebar.documentationSidebar.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Guides": {
+    "message": "Guides",
+    "description": "The label for category Guides in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Translating content": {
+    "message": "Translating content",
+    "description": "The label for category Translating content in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Translation Sets": {
+    "message": "Translation Sets",
+    "description": "The label for category Translation Sets in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Configuration": {
+    "message": "Configuration",
+    "description": "The label for category Configuration in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Connectors": {
+    "message": "Connectors",
+    "description": "The label for category Connectors in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Xliff Connector": {
+    "message": "Xliff Connector",
+    "description": "The label for category Xliff Connector in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Passthrough": {
+    "message": "Passthrough",
+    "description": "The label for category Passthrough in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Google": {
+    "message": "Google",
+    "description": "The label for category Google in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Microsoft": {
+    "message": "Microsoft",
+    "description": "The label for category Microsoft in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Extending Translation Manager": {
+    "message": "Extending Translation Manager",
+    "description": "The label for category Extending Translation Manager in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Mapping values": {
+    "message": "Mapping values",
+    "description": "The label for category Mapping values in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Key topics": {
+    "message": "Key topics",
+    "description": "The label for category Key topics in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Reference": {
+    "message": "Reference",
+    "description": "The label for category Reference in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Implementation": {
+    "message": "Implementation",
+    "description": "The label for category Implementation in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.models": {
+    "message": "models",
+    "description": "The label for category models in sidebar documentationSidebar"
+  }
+}

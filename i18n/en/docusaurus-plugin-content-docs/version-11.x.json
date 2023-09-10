@@ -1,0 +1,174 @@
+{
+  "version.label": {
+    "message": "v11.x - Umbraco 11",
+    "description": "The label for version 11.x"
+  },
+  "sidebar.documentationSidebar.category.uSync": {
+    "message": "uSync",
+    "description": "The label for category uSync in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync.link.generated-index.title": {
+    "message": "uSync",
+    "description": "The generated-index page title for category uSync in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync.link.generated-index.description": {
+    "message": "Everything you need to know about uSync, from the basic setup to the fiddly bits.",
+    "description": "The generated-index page description for category uSync in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Get Started": {
+    "message": "Get Started",
+    "description": "The label for category Get Started in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Get Started.link.generated-index.title": {
+    "message": "Get Started",
+    "description": "The generated-index page title for category Get Started in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Get Started.link.generated-index.description": {
+    "message": "Everything you want to know at the beginning.",
+    "description": "The generated-index page description for category Get Started in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync Guides": {
+    "message": "uSync Guides",
+    "description": "The label for category uSync Guides in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync Guides.link.generated-index.title": {
+    "message": "uSync Guides",
+    "description": "The generated-index page title for category uSync Guides in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync Guides.link.generated-index.description": {
+    "message": "What does it all do and how do I use it?",
+    "description": "The generated-index page description for category uSync Guides in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Extending uSync": {
+    "message": "Extending uSync",
+    "description": "The label for category Extending uSync in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Extending uSync.link.generated-index.title": {
+    "message": "Extending uSync",
+    "description": "The generated-index page title for category Extending uSync in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Extending uSync.link.generated-index.description": {
+    "message": "How can I extend uSync? ",
+    "description": "The generated-index page description for category Extending uSync in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync References": {
+    "message": "uSync References",
+    "description": "The label for category uSync References in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync References.link.generated-index.title": {
+    "message": "uSync References",
+    "description": "The generated-index page title for category uSync References in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync References.link.generated-index.description": {
+    "message": "How to make uSync work for you.",
+    "description": "The generated-index page description for category uSync References in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync Fundementals": {
+    "message": "uSync Fundementals",
+    "description": "The label for category uSync Fundementals in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync Fundementals.link.generated-index.title": {
+    "message": "uSync Fundementals",
+    "description": "The generated-index page title for category uSync Fundementals in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync Fundementals.link.generated-index.description": {
+    "message": "Important stuff you might need to know about.",
+    "description": "The generated-index page description for category uSync Fundementals in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync.Complete": {
+    "message": "uSync.Complete",
+    "description": "The label for category uSync.Complete in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync.Complete.link.generated-index.title": {
+    "message": "uSync.Complete",
+    "description": "The generated-index page title for category uSync.Complete in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync.Complete.link.generated-index.description": {
+    "message": "Your guide to uSync.Complete setup and features. ",
+    "description": "The generated-index page description for category uSync.Complete in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Setup": {
+    "message": "Setup",
+    "description": "The label for category Setup in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Setup.link.generated-index.title": {
+    "message": "Setup for uSync.Complete",
+    "description": "The generated-index page title for category Setup in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Setup.link.generated-index.description": {
+    "message": "Guides for getting everything up and ready.",
+    "description": "The generated-index page description for category Setup in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync.Publisher": {
+    "message": "uSync.Publisher",
+    "description": "The label for category uSync.Publisher in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync.Publisher.link.generated-index.title": {
+    "message": "uSync.Publisher",
+    "description": "The generated-index page title for category uSync.Publisher in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync.Publisher.link.generated-index.description": {
+    "message": "Everything you need to know about uSync.Publisher and some stuff you don't.",
+    "description": "The generated-index page description for category uSync.Publisher in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync.Complete Guides": {
+    "message": "uSync.Complete Guides",
+    "description": "The label for category uSync.Complete Guides in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync.Complete Guides.link.generated-index.title": {
+    "message": "uSync.Complete Guides",
+    "description": "The generated-index page title for category uSync.Complete Guides in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync.Complete Guides.link.generated-index.description": {
+    "message": "What does it all do and how do I use it? ",
+    "description": "The generated-index page description for category uSync.Complete Guides in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Publisher": {
+    "message": "Publisher",
+    "description": "The label for category Publisher in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Publisher.link.generated-index.title": {
+    "message": "Publisher",
+    "description": "The generated-index page title for category Publisher in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Publisher.link.generated-index.description": {
+    "message": "Find out what uSync.Publisher is and how to use it.",
+    "description": "The generated-index page description for category Publisher in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.People Edition": {
+    "message": "People Edition",
+    "description": "The label for category People Edition in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.People Edition.link.generated-index.title": {
+    "message": "People Edition",
+    "description": "The generated-index page title for category People Edition in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.People Edition.link.generated-index.description": {
+    "message": "Your guide to uSync.PeopleEdition.",
+    "description": "The generated-index page description for category People Edition in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Extending": {
+    "message": "Extending",
+    "description": "The label for category Extending in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Extending.link.generated-index.title": {
+    "message": "Extending uSync.Complete",
+    "description": "The generated-index page title for category Extending in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Extending.link.generated-index.description": {
+    "message": "How can I extend uSync.Complete? ",
+    "description": "The generated-index page description for category Extending in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync.Complete References": {
+    "message": "uSync.Complete References",
+    "description": "The label for category uSync.Complete References in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync.Complete References.link.generated-index.title": {
+    "message": "uSync.Complete References",
+    "description": "The generated-index page title for category uSync.Complete References in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.uSync.Complete References.link.generated-index.description": {
+    "message": "How to make uSync.Complete work for you.",
+    "description": "The generated-index page description for category uSync.Complete References in sidebar documentationSidebar"
+  }
+}

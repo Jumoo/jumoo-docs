@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "JumooDocs",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "jumoo-logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.uSync": {
+    "message": "uSync",
+    "description": "Navbar item with label uSync"
+  },
+  "item.label.Translation manager": {
+    "message": "Translation manager",
+    "description": "Navbar item with label Translation manager"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

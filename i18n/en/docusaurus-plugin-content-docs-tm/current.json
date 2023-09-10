@@ -1,0 +1,110 @@
+{
+  "version.label": {
+    "message": "v12.x - Umbraco 12",
+    "description": "The label for version current"
+  },
+  "sidebar.documentationSidebar.category.Get Started": {
+    "message": "Get Started",
+    "description": "The label for category Get Started in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Get Started.link.generated-index.title": {
+    "message": "Get Started with Translation Manager",
+    "description": "The generated-index page title for category Get Started in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Get Started.link.generated-index.description": {
+    "message": "Your guide to installing Translation Manager and getting started.",
+    "description": "The generated-index page description for category Get Started in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.User Guide": {
+    "message": "User Guide",
+    "description": "The label for category User Guide in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.User Guide.link.generated-index.title": {
+    "message": "User Guide",
+    "description": "The generated-index page title for category User Guide in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.User Guide.link.generated-index.description": {
+    "message": "How to use Translation Manager.",
+    "description": "The generated-index page description for category User Guide in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Extending": {
+    "message": "Extending",
+    "description": "The label for category Extending in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Extending.link.generated-index.title": {
+    "message": "Extending",
+    "description": "The generated-index page title for category Extending in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Extending.link.generated-index.description": {
+    "message": "How to extend Translation Manager to meet your needs.",
+    "description": "The generated-index page description for category Extending in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Connectors": {
+    "message": "Connectors",
+    "description": "The label for category Connectors in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Connectors.link.generated-index.title": {
+    "message": "Connectors",
+    "description": "The generated-index page title for category Connectors in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Connectors.link.generated-index.description": {
+    "message": "A guide to Translation Connectors, their uses and the options available.",
+    "description": "The generated-index page description for category Connectors in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Xliff Connector": {
+    "message": "Xliff Connector",
+    "description": "The label for category Xliff Connector in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Crowdin Connector": {
+    "message": "Crowdin Connector",
+    "description": "The label for category Crowdin Connector in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Mapping Values": {
+    "message": "Mapping Values",
+    "description": "The label for category Mapping Values in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Mapping Values.link.generated-index.title": {
+    "message": "Mapping Values",
+    "description": "The generated-index page title for category Mapping Values in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Mapping Values.link.generated-index.description": {
+    "message": "Mapping and Mappers explained.",
+    "description": "The generated-index page description for category Mapping Values in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Models": {
+    "message": "Models",
+    "description": "The label for category Models in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Models.link.generated-index.title": {
+    "message": "Models",
+    "description": "The generated-index page title for category Models in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Models.link.generated-index.description": {
+    "message": "A helpful collection of implimentation details.",
+    "description": "The generated-index page description for category Models in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Reference": {
+    "message": "Reference",
+    "description": "The label for category Reference in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Reference.link.generated-index.title": {
+    "message": "Reference",
+    "description": "The generated-index page title for category Reference in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Reference.link.generated-index.description": {
+    "message": "A Reference for what all the pieces do and what the warnings mean.",
+    "description": "The generated-index page description for category Reference in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Fundementals": {
+    "message": "Fundementals",
+    "description": "The label for category Fundementals in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Fundementals.link.generated-index.title": {
+    "message": "Fundementals",
+    "description": "The generated-index page title for category Fundementals in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Fundementals.link.generated-index.description": {
+    "message": "What do all these things do?",
+    "description": "The generated-index page description for category Fundementals in sidebar documentationSidebar"
+  }
+}

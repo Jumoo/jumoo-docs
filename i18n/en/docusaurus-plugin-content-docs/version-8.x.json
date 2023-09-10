@@ -1,0 +1,58 @@
+{
+  "version.label": {
+    "message": "v8.x - Umbraco 8",
+    "description": "The label for version 8.x"
+  },
+  "sidebar.tutorialSidebar.category.uSync": {
+    "message": "uSync",
+    "description": "The label for category uSync in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Guides": {
+    "message": "Guides",
+    "description": "The label for category Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Extending": {
+    "message": "Extending",
+    "description": "The label for category Extending in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Key topics": {
+    "message": "Key topics",
+    "description": "The label for category Key topics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.uSync.Complete": {
+    "message": "uSync.Complete",
+    "description": "The label for category uSync.Complete in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Introduction": {
+    "message": "Introduction",
+    "description": "The label for category Introduction in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.uSync.Publisher": {
+    "message": "uSync.Publisher",
+    "description": "The label for category uSync.Publisher in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Getting started": {
+    "message": "Getting started",
+    "description": "The label for category Getting started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.publisher": {
+    "message": "publisher",
+    "description": "The label for category publisher in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Configuration": {
+    "message": "Configuration",
+    "description": "The label for category Configuration in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.uSync.ContentEdition": {
+    "message": "uSync.ContentEdition",
+    "description": "The label for category uSync.ContentEdition in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Reference": {
+    "message": "Reference",
+    "description": "The label for category Reference in sidebar tutorialSidebar"
+  }
+}

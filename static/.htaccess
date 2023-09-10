@@ -1,0 +1,10 @@
+# htaccess redirects.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+Redirect 301 /usync/uSync/key_topics/firstboot /usync/uSync/reference/Fundementals/firstboot
+Redirect 301 /usync/complete/publisher/siteseed /usync/complete/setup/publisher/siteseed
+Redirect 301 /tm/v8/msg/domain-mismatch/ /tm/reference/licencebanner
+Redirect 301 /tm/v8/msg/missing-targets/ /tm/reference/missing
+Redirect 301 /usync/reference/config/ /usync/uSync/reference/config
+Redirect 301 /usync/complete/publisher/siteseed/ /usync/complete/setup/publisher/siteseed
+</IfModule>

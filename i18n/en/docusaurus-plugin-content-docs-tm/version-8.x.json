@@ -1,0 +1,58 @@
+{
+  "version.label": {
+    "message": "v8.x - Umbraco 8",
+    "description": "The label for version 8.x"
+  },
+  "sidebar.tutorialSidebar.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Guides": {
+    "message": "Guides",
+    "description": "The label for category Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Translating content": {
+    "message": "Translating content",
+    "description": "The label for category Translating content in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Translation Sets": {
+    "message": "Translation Sets",
+    "description": "The label for category Translation Sets in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Configuration": {
+    "message": "Configuration",
+    "description": "The label for category Configuration in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Connectors": {
+    "message": "Connectors",
+    "description": "The label for category Connectors in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Xliff Connector": {
+    "message": "Xliff Connector",
+    "description": "The label for category Xliff Connector in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Extending Translation Manager": {
+    "message": "Extending Translation Manager",
+    "description": "The label for category Extending Translation Manager in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Mapping values": {
+    "message": "Mapping values",
+    "description": "The label for category Mapping values in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Key topics": {
+    "message": "Key topics",
+    "description": "The label for category Key topics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Reference": {
+    "message": "Reference",
+    "description": "The label for category Reference in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Implementation": {
+    "message": "Implementation",
+    "description": "The label for category Implementation in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.models": {
+    "message": "models",
+    "description": "The label for category models in sidebar tutorialSidebar"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "link.title.Docs": {
+    "message": "Docs",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.About": {
+    "message": "About",
+    "description": "The title of the footer links column with title=About in the footer"
+  },
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.uSync": {
+    "message": "uSync",
+    "description": "The label of footer link with label=uSync linking to /usync/intro"
+  },
+  "link.item.label.Translation Manager": {
+    "message": "Translation Manager",
+    "description": "The label of footer link with label=Translation Manager linking to /tm/"
+  },
+  "link.item.label.Jumoo": {
+    "message": "Jumoo",
+    "description": "The label of footer link with label=Jumoo linking to https://jumoo.co.uk"
+  },
+  "link.item.label.Products": {
+    "message": "Products",
+    "description": "The label of footer link with label=Products linking to https://jumoo.co.uk/products.php"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to https://jumoo.co.uk/blog"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/Jumoo/jumoo-docs"
+  },
+  "copyright": {
+    "message": "Copyright © 2023 Jumoo.",
+    "description": "The footer copyright"
+  }
+}
