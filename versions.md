@@ -9,7 +9,7 @@ Enter `npm run docusaurus docs:version 13.x` changing the version number to matc
 
 >(1.b) if you are doing translation manager the command is different. Instead enter `npm run docusaurus docs:version:tm 13.x`.
 
-(2) change the docusaurus.config.js file, adding the old version to the list of archieved versions, and adding the new version as the current version. (There are TWO lists to edit here, dont forget one).
+(2) change the docusaurus.config.js file, adding the old version to the list of archieved versions, and adding the new version as the current version. (There are TWO lists to edit here, dont forget one (THE BOTTOM ONE IS TRANSLATION MANAGER)).
 
 (3) go to i18n\en --> docusaurus-plugin-content-blog & docusaurus-plugin-content-docs and change the current version to the new version. 
 
