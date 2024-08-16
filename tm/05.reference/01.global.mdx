@@ -32,19 +32,9 @@ Number of items to process in a batch (if you are experiencing timeouts, try low
 ### Update Links 
 When content is approved, links will update to match the target site.
 
+## Core Config
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-<Tabs
-  defaultValue="9"
-  values={[
-    { label: 'Umbraco 9', value: '9', },
-  ]
-}>
-<TabItem value="9">
-
-In Umbraco 9 the global settings are read from the `appsettings.json` file.
+In Umbraco the global settings are read from the `appsettings.json` file.
 
 :::tip
 All these settings will have a default value and do not need set within the appsettings file, unless you are 
@@ -55,29 +45,64 @@ overriding the default setting.
 {
     "Translation": {
         "backgroundCheck": true,
-        "checkPeriod": 180,
+        "scheduleCheckPeriod": 180,
         "autoTranslate": true,
         "includeEmpty": false,
         "batchSize": 25,
-        "showHistory": true,
+        "history": true,
         "fixup": false,
         "returnToPending": false,
+        "relationType": ??,relateDocumentOnCopy???
+        "UniqueNestedIds": true,
+        "CheckLinksOnLoopback": false,
+        "autoTranslate": true, 
+        "autoTranslatePublishOnly": false,
         "links": {
-            "pickers": false
+            "inline": true,
+            "pickers": false, 
         },
         "notify": {
             "pending": "",
             "approved": "",
             "submitted": "",
             "received": ""
+            "disabled": false,
+            "subject": "Translations : [{job}] - {eventName}",
+            "{eventName}": "string.Empty",
         },
-        "tagSettings": {
-            "tags": "img,a",
-            "attributes": "title,alt"
+
+        "mappers": {
+            "inline":{
+                "tags": "img,a",
+                "attributes": "title,alt"
+                "strict": true,
+            }
+            "text":{
+                "text": "string.Empty",
+            }
         }
     }
 }
 ```
 
-</TabItem>
-</Tabs>
+<!-- I have. no sense of if the above code is remotely right-->
+
+### backgroundCheck
+
+### scheduleCheckPeriod
+
+### autoTranslate
+
+### hideLicenceTab
+
+### includeEmpty
+
+### history
+
+### batchSize
+
+### fixup
+
+### returnToPending
+
+
