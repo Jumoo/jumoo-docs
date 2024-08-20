@@ -14,21 +14,6 @@ These are found in Settings -> Translation Manager.
 
 ## Settings 
 
-### Translate on Save
-Saves the changes that have been made into the *Pending* queue.
-
-### Background Check
-Periodically checks the status of submitted [Jobs](fundementals/job) automatically.
-
-### Check Period 
-The number specifies how often the background check occurs.
-
-### Include Empty Nodes 
-Include nodes with no translatable text in jobs.
-
-### Batch Size 
-Number of items to process in a batch (if you are experiencing timeouts, try lowering this number).
-
 ### Update Links 
 When content is approved, links will update to match the target site.
 
@@ -52,7 +37,7 @@ overriding the default setting.
         "history": true,
         "fixup": false,
         "returnToPending": false,
-        "relationType": ??,relateDocumentOnCopy???
+        "relationType": "relateDocumentOnCopy",
         "UniqueNestedIds": true,
         "CheckLinksOnLoopback": false,
         "autoTranslate": true, 
@@ -68,7 +53,6 @@ overriding the default setting.
             "received": ""
             "disabled": false,
             "subject": "Translations : [{job}] - {eventName}",
-            "{eventName}": "string.Empty",
         },
 
         "mappers": {
@@ -85,24 +69,51 @@ overriding the default setting.
 }
 ```
 
-<!-- I have. no sense of if the above code is remotely right-->
 
-### backgroundCheck
+### Background Check
+Periodically checks the status of submitted [Jobs](fundementals/job) automatically.
 
-### scheduleCheckPeriod
+### Check Period 
+The number specifies how often the background check occurs.
 
-### autoTranslate
+### Include Empty Nodes 
+Include nodes with no translatable text in jobs.
 
-### hideLicenceTab
-
-### includeEmpty
+### Batch Size 
+Number of items to process in a batch (if you are experiencing timeouts, try lowering this number).
 
 ### history
-
-### batchSize
-
-### fixup
+Shows the history tab on a job. This allows you to see events. This setting is on by default
 
 ### returnToPending
+Put translated content back into the pending queue if a job is cancelled. May cause conflicts. This setting is off by default.
 
+### relationType
+Default Umbraco relation used to link pages across languages. 
 
+### UniqueNestedIds
+Ensures that block and nested items get unique internal IDs when tranlated into other languages. By default these IDS are seperate, but depending on your set up you may want them to remain the same. 
+
+### CheckLinksOnLoopback
+Toggle whether or not links within content are checked on translations that are using variants. By default, links are only checked on translations between two different sitenodes. 
+
+### autoTranslate
+Saves the changes that have been made into the *Pending*.
+
+### autoTranslatePublishOnly
+Only published items are put into the pending queue
+
+### hideLicenceTab
+Hide the licence tab from the UI. This setting is useful if you dont want anyone to see the licence key.
+
+### fixup
+Turns on debugging in interface by default, so you can delete the things you can't usually delete. You can turn this on per request by adding `&tm=debug` to the url.
+
+### notify
+The email adresses that notifs will be sent to when jobs reach a certain stage.
+
+### subject
+The template for the subject is ID, source, and target, ID. The ID is the job ID, the source is the source language, and the target is the target language. The options for eventname are pending, approved, submitted, and recieved
+
+## mappers
+Mappers are explained on the [Property Mapping page](../extending/mapping/index). 
