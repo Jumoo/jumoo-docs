@@ -1,0 +1,40 @@
+---
+title: Upgrading Translation Manager
+---
+
+
+You can upgrade Translation Manager via the commandline or editing your project (.csproj) file directly.
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="core"
+  values={[
+    { label: 'Dotnet', value: 'core', },
+    { label: 'Package Reference', value: 'pm', },
+  ]
+}>
+<TabItem value="pm">
+
+```cli
+<PackageReference Include="Jumoo.TranslationManager" Version="13.*" />
+```
+
+</TabItem>
+<TabItem value="core">
+
+```cli
+dotnet add package Jumoo.TranslationManager
+```
+
+</TabItem>
+</Tabs>
+
+### Finishing Jobs
+
+We don't reccomend that you upgrade Translation Manager with jobs in their submitted state. 
+
+Usually, upgrades don't change internal data, but occasionally they do, so it is much safer not to have open jobs when you upgrade.
+
+
