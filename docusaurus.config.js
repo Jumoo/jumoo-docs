@@ -31,7 +31,7 @@ const config = {
           editUrl: 'https://github.com/Jumoo/jumoo-docs/edit/master',
           versions: {
             current: {
-              label: 'v14.x - Umbraco 14'
+              label: 'v15.x - Umbraco 15'
             },
             "13.x" : {
               label: 'v13.x - Umbraco 13',
@@ -70,7 +70,7 @@ const config = {
         lastVersion: 'current',
         versions: {
           current: {
-            label: 'v14.x - Umbraco 14'
+            label: 'v15.x - Umbraco 15'
           },
           "13.x": {
             label: 'v13.x - Umbraco 13',
