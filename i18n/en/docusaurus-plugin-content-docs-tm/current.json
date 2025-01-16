@@ -1,6 +1,6 @@
 {
   "version.label": {
-    "message": "v15.x - Umbraco 15",
+    "message": "Umbraco 14 Onwards",
     "description": "The label for version current"
   },
   "sidebar.documentationSidebar.category.Get Started": {
