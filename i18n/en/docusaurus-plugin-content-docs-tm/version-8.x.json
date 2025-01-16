@@ -1,6 +1,6 @@
 {
   "version.label": {
-    "message": "Umbraco 8",
+    "message": "v8",
     "description": "The label for version 8.x"
   },
   "sidebar.tutorialSidebar.category.Getting Started": {
