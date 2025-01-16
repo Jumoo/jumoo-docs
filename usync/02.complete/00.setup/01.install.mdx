@@ -13,20 +13,12 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs
-  defaultValue="pm"
+  defaultValue="core"
   values={[
-    { label: 'Package Manager', value: 'pm', },
     { label: 'Dotnet', value: 'core', },
     { label: 'Package reference', value: 'ref' }
   ]
 }>
-<TabItem value="pm">
-
-```cli
-install-package uSync.Complete 
-```
-
-</TabItem>
 <TabItem value="core">
 
 ```cli
@@ -45,5 +37,5 @@ dotnet add package uSync.Complete
 
 ### Install as package
 :::info
-uSync.Complete v9 is only available as a nuget package, there is currently no way to install a package directly from the backoffice in Umbraco 9 
+uSync.Complete v15 is only available as a nuget package, there is currently no way to install a package directly from the backoffice in Umbraco 15
 :::

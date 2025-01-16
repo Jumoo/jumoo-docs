@@ -13,4 +13,4 @@ Enter `npm run docusaurus docs:version 13.x` changing the version number to matc
 
 (3) go to i18n\en --> docusaurus-plugin-content-blog & docusaurus-plugin-content-docs and change the current version to the new version. 
 
-<!-- Congratulation! You are very cool and smell incredible! -->
+<!-- Congratulation! You are very cool and smell incredible! --> 

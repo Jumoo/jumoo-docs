@@ -1,0 +1,85 @@
+---
+title: Custom JSON Properties
+---
+
+If your property editor stores its values within a JSON object, you can use the config
+file to tell Translation Manager how to interpret your properties data.
+For example, if you have a property that stores its data in the following format:
+
+```json
+{
+    "Key", "some-key-value",
+    "Title", "my property title",
+    "Content", "<p>some rich text content</p>"
+}
+```
+
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="9"
+  values={[
+    { label: 'Umbraco 8', value: '8', },
+    { label: 'Umbraco 9/10', value: '9', },
+  ]
+}>
+<TabItem value="8">
+
+Then you could use the config options below to define the Title and Content
+fields as text-based.
+Within the *Mappers* section of the config file, you can define this using the `<custom>`
+or `<grid>` config nodes (see below for details of how the grid naming works).
+
+```xml
+<translations>
+    <mappers>
+        <custom>
+            <config alias="My.Custom.Property">
+                <properties>
+                    <property name="Title" alias="Umbraco.Textbox" />
+                    <property name="Content" alias="Umbraco.TinyMCEv3" />
+                </properties>
+            </config>
+        </custom>
+    </mappers>
+<translations>
+```
+This config tells Translation Manager to treat all My.Custom.Property values as
+JSON and to extract the title and content values when creating and importing
+translations.
+
+</TabItem>
+<TabItem value="9">
+
+:::note
+In Umbraco 9/10 the mappings are stored in a `config/translation_mapping.config` file.
+This file does not exist by default and you will need to create it if you want to define custom mappings. 
+:::
+
+If your property editor used the JSON above then you can map this with the following configuration in
+the `config/translation_mapping.config`. You will need to define the config using the `<custom>`
+or `<grid>` config nodes (see below for details of how the grid naming works).
+
+```xml
+<translations>
+    <mappers>
+        <custom>
+            <config alias="My.Custom.Property">
+                <properties>
+                    <property name="Title" alias="Umbraco.Textbox" />
+                    <property name="Content" alias="Umbraco.TinyMCEv3" />
+                </properties>
+            </config>
+        </custom>
+    </mappers>
+<translations>
+```
+This config tells Translation Manager to treat all My.Custom.Property values as
+JSON and to extract the title and content values when creating and importing
+translations.
+
+
+</TabItem>
+</Tabs>
