@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Jumoo docs',
   tagline: 'Documentation for jumoo products',
-  url: 'https://jumoo.github.io/',
-  baseUrl: '/jumoo-docs/',
+  url: 'https://docs.jumoo.uk/',
+  baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
