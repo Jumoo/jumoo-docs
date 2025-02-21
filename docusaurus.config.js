@@ -35,20 +35,15 @@ const config = {
             },
             "13.x": {
               label: "v13.x - Umbraco 13",
-              banner: "none",
-            },
-            "12.x": {
-              label: "v12.x - Umbraco 12",
               banner: "unmaintained",
             },
-
             "10.x": {
               label: "v10.x - Umbraco 10",
-              banner: "none",
+              banner: "unmaintained",
             },
             "8.x": {
               label: "v8.x - Umbraco 8",
-              banner: "none",
+              banner: "unreleased",
             },
           },
         },
@@ -74,20 +69,15 @@ const config = {
           },
           "13.x": {
             label: "v13.x - Umbraco 13",
-            banner: "none",
-          },
-          "12.x": {
-            label: "v12.x - Umbraco 12",
             banner: "unmaintained",
-          },
-
+          },         
           "10.x": {
             label: "v10.x - Umbraco 10",
-            banner: "none",
+            banner: "unmaintained",
           },
           "8.x": {
             label: "v8.x - Umbraco 8",
-            banner: "none",
+            banner: "unreleased",
           },
         },
       },
