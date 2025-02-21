@@ -7,8 +7,8 @@ import Link from '@docusaurus/Link';
 const FeatureList = [
   {
     title: 'uSync / uSync.Complete',
-    img: '/img/complete-256.png',
-    link: '/usync/intro',
+    img: 'img/complete-256.png',
+    link: 'usync/intro',
     description: (
       <>
         uSync lets you keep your Umbraco sites in sync by reading and writing settings to and from the disk
@@ -17,8 +17,8 @@ const FeatureList = [
   },
   {
     title: 'Translation Manager',
-    img: '/img/tmlogo.png',
-    link: '/tm',
+    img: 'img/tmlogo.png',
+    link: 'tm',
     description: (
       <>
         Translation Manager provides a quick and simple way to get your Umbraco website translated and works 
