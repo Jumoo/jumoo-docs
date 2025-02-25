@@ -162,6 +162,10 @@ const config = {
             title: "More",
             items: [
               {
+                label: "Support Lifecycles",
+                href: "/SupportLifecycles",
+              },
+              {
                 label: "GitHub",
                 href: "https://github.com/Jumoo/jumoo-docs",
               },
