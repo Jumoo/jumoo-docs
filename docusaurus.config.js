@@ -175,7 +175,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Jumoo.`,
       },
       prism: {
-        additionalLanguages: ["powershell", "csharp"],
+        additionalLanguages: ["powershell", "csharp", "bash"],
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
