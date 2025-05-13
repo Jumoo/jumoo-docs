@@ -105,7 +105,7 @@ const config = {
             docsPluginId: "tm",
             docId: "intro",
             position: "left",
-            label: "Translation manager",
+            label: "Translation Manager",
           },
           {
             type: "docsVersionDropdown",
