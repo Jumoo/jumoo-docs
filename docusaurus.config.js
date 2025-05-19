@@ -165,6 +165,9 @@ const config = {
                 label: "Support Lifecycles",
                 href: "/SupportLifecycles",
               },
+              {label: "Product Licences",
+                href: "/licences"
+              },
               {
                 label: "GitHub",
                 href: "https://github.com/Jumoo/jumoo-docs",
