@@ -4,7 +4,7 @@ title: Support Lifecycles
 
 # Support Lifecycles in Umbraco, Translation Manager, and uSync
 
-Releases for both uSync *and* Translation Manager are tied to Umbraco, so to keep things simple we release updates at the same time as Umbraco. This means our short-term support (STS) and long-term support (LTS) plans are also in sync with Umbraco!
+Releases for both uSync *and* Translation Manager are tied to Umbraco, so to keep things simple we release updates at the same time as Umbraco. This means our short-term support (STS) and long-term support (LTS) plans are also in sync with Umbraco.
 
 If you want to know when support will expire on your version of uSync or Translation Manager you can check the charts below.
 
@@ -22,7 +22,6 @@ From release, to the end of standard support, we will fix any bugs, and issue up
 |--|--|--|--|--|
 10 |	16th June 2022 |	LTS |	16th June 2024 |	16th June 2025
 13 | 14th December 2023 | LTS | 14th December 2025 | 14th December 2026
-14 |	30th May 2024 | STS | 2nd March 2025 | 30th May 2025
 15 |	14th November 2024 |	STS |  14th August  2025 | 14th November 2025
 
 ### Upcoming Releases
@@ -38,6 +37,7 @@ From release, to the end of standard support, we will fix any bugs, and issue up
 9 | 29th September 2021 | STS | 16th September 2022 | 16th December 2022
 11 |	12th December 2022 |	STS |	1st September 2023 |	1st December 2023
 12 |	29th June 2023 |	STS |	29th March 2024 |	29th June 2024
+14 |	30th May 2024 | STS | 2nd March 2025 | 30th May 2025
 
 ### More Info
 
