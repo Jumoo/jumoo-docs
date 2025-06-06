@@ -1,0 +1,44 @@
+---
+title: Installation
+---
+
+To install Translation Manager you will first need to have [installed Umbraco.](https://docs.umbraco.com/umbraco-cms/fundamentals/setup/install)
+
+:::note
+Translation Manager v15 runs on Umbraco v15
+::: 
+
+## Install via NuGet Package Manager 
+If you have [installed your Umbraco site via NuGet](https://our.umbraco.com/documentation/Fundamentals/Setup/Install/install-umbraco-with-nuget) then you can also install Translation Manager from within Visual Studio by running the following command in the [Package Manager Console.](https://docs.microsoft.com/en-us/nuget/consume-packages/install-use-packages-powershell)
+
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="core"
+  values={[
+    { label: 'Dotnet', value: 'core', },
+    { label: 'Package Reference', value: 'pm', },
+  ]
+}>
+<TabItem value="pm">
+
+```cli
+<PackageReference Include="Jumoo.TranslationManager" Version="15.*" />
+```
+
+</TabItem>
+<TabItem value="core">
+
+```cli
+dotnet add package Jumoo.TranslationManager
+```
+
+</TabItem>
+</Tabs>
+
+
+## Install as Package 
+On Umbraco v15 you can't install packages via the backoffice, it must be installed via NuGet.
+ 

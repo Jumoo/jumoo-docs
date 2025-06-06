@@ -1,0 +1,8 @@
+{
+    "label" : "Get Started",
+    "link": {
+        "type": "generated-index",
+        "title": "Get Started",
+        "description": "Everything you want to know at the beginning."
+    }
+}
