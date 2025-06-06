@@ -1,0 +1,46 @@
+---
+title: Installation
+---
+
+To install uSync you will first need to have [installed Umbraco.](https://docs.umbraco.com/umbraco-cms/fundamentals/setup/install)
+
+:::note
+uSync v15 runs on Umbraco v15.x. See our [compatibility table](/SupportLifecycles) to see which version you need for other Umbraco versions. 
+:::
+
+
+## Install via NuGet Package Manager 
+If you have [installed your Umbraco site via NuGet](https://our.umbraco.com/documentation/Fundamentals/Setup/Install/install-umbraco-with-nuget), you can also install uSync from within Visual Studio by running the following command in the [Package Manager Console.](https://docs.microsoft.com/en-us/nuget/consume-packages/install-use-packages-powershell)
+
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="core"
+  values={[
+    { label: 'Dotnet', value: 'core', },
+    { label: 'Package reference', value: 'ref' }
+  ]
+}>
+
+<TabItem value="core">
+
+```cli
+dotnet add package uSync
+```
+
+</TabItem>
+<TabItem value="ref">
+
+```cli
+<PackageReference Include="uSync" Version="VERSION" />
+```
+
+</TabItem>
+</Tabs>
+
+### Install as package
+:::info
+uSync v15 is only available as a nuget package, there is currently no way to install a package directly from the backoffice in Umbraco 15
+:::
