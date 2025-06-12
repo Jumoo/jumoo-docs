@@ -23,7 +23,7 @@ From release, to the end of standard support, we will fix any bugs, and issue up
 10 |	16th June 2022 |	LTS |	16th June 2024 |	16th June 2025
 13 | 14th December 2023 | LTS | 14th December 2025 | 14th December 2026
 15 |	14th November 2024 |	STS |  12th June 2025 | 14th November 2025
-16 |	12th June 2025 |	STS |	12th March 2026 |	12th June 2026
+16 |	12th June 2025 |	STS |	27th November 2027 |	12th June 2026
 
 ### Upcoming Releases
 | Version | Release Date | Type | End of Standard Support | End-of-Life
