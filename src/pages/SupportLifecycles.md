@@ -20,7 +20,6 @@ From release, to the end of standard support, we will fix any bugs, and issue up
 
 | Version | Release Date | Type | End of Standard Support | End-of-Life
 |--|--|--|--|--|
-10 |	16th June 2022 |	LTS |	16th June 2024 |	16th June 2025
 13 | 14th December 2023 | LTS | 14th December 2025 | 14th December 2026
 15 |	14th November 2024 |	STS |  12th June 2025 | 14th November 2025
 16 |	12th June 2025 |	STS |	27th November 2027 |	12th June 2026
@@ -29,12 +28,17 @@ From release, to the end of standard support, we will fix any bugs, and issue up
 | Version | Release Date | Type | End of Standard Support | End-of-Life
 |--|--|--|--|--|
 17 |	27th November 2025 |	LTS |	27th November 2027 |	27th November 2028
+18 | 25th June 2026 | STS | 25th March 2027 | 25th June 2027
+19 | 10th December 2026 | STS | 10th September 2027 | 10th December 2027
+20 | 24th June 2027 | STS | 24th March 2028 | 24th June 2028
+21 | 9th December 2027 | LTS | 9th December 2029 | 9th December 2030
 
 ### End-of-Life
 | Version | Release Date | Type | End of Standard Support | End-of-Life
 |--|--|--|-|--|
 8 |	 16th September 2019 |	N/A	|	24th February 2024 |	24th February 2025
 9 | 29th September 2021 | STS | 16th September 2022 | 16th December 2022
+10 |	16th June 2022 |	LTS |	16th June 2024 |	16th June 2025
 11 |	12th December 2022 |	STS |	1st September 2023 |	1st December 2023
 12 |	29th June 2023 |	STS |	29th March 2024 |	29th June 2024
 14 |	30th May 2024 | STS | 2nd March 2025 | 30th May 2025
