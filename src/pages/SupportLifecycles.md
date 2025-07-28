@@ -22,15 +22,15 @@ From release, to the end of standard support, we will fix any bugs, and issue up
 |--|--|--|--|--|
 13 | 14th December 2023 | LTS | 14th December 2025 | 14th December 2026
 15 |	14th November 2024 |	STS |  12th June 2025 | 14th November 2025
-16 |	12th June 2025 |	STS |	27th November 2027 |	12th June 2026
+16 |	12th June 2025 |	STS |	27th November 2025 |	12th June 2026
 
 ### Upcoming Releases
 | Version | Release Date | Type | End of Standard Support | End-of-Life
 |--|--|--|--|--|
 17 |	27th November 2025 |	LTS |	27th November 2027 |	27th November 2028
-18 | 25th June 2026 | STS | 25th March 2027 | 25th June 2027
-19 | 10th December 2026 | STS | 10th September 2027 | 10th December 2027
-20 | 24th June 2027 | STS | 24th March 2028 | 24th June 2028
+18 | 25th June 2026 | STS | 10th December 2026 | 25th June 2027
+19 | 10th December 2026 | STS | 24th June 2027 | 10th December 2027
+20 | 24th June 2027 | STS | 9th December 2027 | 24th June 2028
 21 | 9th December 2027 | LTS | 9th December 2029 | 9th December 2030
 
 ### End-of-Life
