@@ -3,15 +3,15 @@
     "message": "v16.x - Umbraco 16",
     "description": "The label for version current"
   },
-  "sidebar.documentationSidebar.category.Get Started": {
+  "sidebar.documentationSidebar.category.get-started-tm": {
     "message": "Get Started",
     "description": "The label for category Get Started in sidebar documentationSidebar"
   },
-  "sidebar.documentationSidebar.category.Get Started.link.generated-index.title": {
+  "sidebar.documentationSidebar.category.get-started-tm.link.generated-index.title": {
     "message": "Get Started with Translation Manager",
     "description": "The generated-index page title for category Get Started in sidebar documentationSidebar"
   },
-  "sidebar.documentationSidebar.category.Get Started.link.generated-index.description": {
+  "sidebar.documentationSidebar.category.get-started-tm.link.generated-index.description": {
     "message": "Your guide to installing Translation Manager and getting started.",
     "description": "The generated-index page description for category Get Started in sidebar documentationSidebar"
   },

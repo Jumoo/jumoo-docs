@@ -1,5 +1,6 @@
 {
     "label": "Get Started",
+    "key": "get-started-tm",
     "link": {
         "type": "generated-index",
         "title": "Get Started with Translation Manager",

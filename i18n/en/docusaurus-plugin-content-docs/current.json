@@ -15,15 +15,15 @@
     "message": "Everything you need to know about uSync, from the basic setup to the fiddly bits.",
     "description": "The generated-index page description for category uSync in sidebar documentationSidebar"
   },
-  "sidebar.documentationSidebar.category.Get Started": {
+  "sidebar.documentationSidebar.category.get-started-usync": {
     "message": "Get Started",
-    "description": "The label for category Get Started in sidebar documentationSidebar"
+    "description": "The label for category Get Started in sidebar documentationSidebar-something"
   },
-  "sidebar.documentationSidebar.category.Get Started.link.generated-index.title": {
+  "sidebar.documentationSidebar.category.get-started-usync.link.generated-index.title": {
     "message": "Get Started",
     "description": "The generated-index page title for category Get Started in sidebar documentationSidebar"
   },
-  "sidebar.documentationSidebar.category.Get Started.link.generated-index.description": {
+  "sidebar.documentationSidebar.category.get-started-usync.link.generated-index.description": {
     "message": "Everything you want to know at the beginning.",
     "description": "The generated-index page description for category Get Started in sidebar documentationSidebar"
   },
