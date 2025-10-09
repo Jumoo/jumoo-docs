@@ -11,7 +11,6 @@ const config = {
   url: "https://docs.jumoo.co.uk/",
   baseUrl: "/",
   onBrokenLinks: "warn",
-  onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "Jumoo", // Usually your GitHub org/user name.
   projectName: "jumoodocs", // Usually your repo name.
@@ -78,7 +77,7 @@ const config = {
           "13.x": {
             label: "v13.x - Umbraco 13",
             banner: "unmaintained",
-          },         
+          },
           "10.x": {
             label: "v10.x - Umbraco 10",
             banner: "unmaintained",
@@ -173,7 +172,8 @@ const config = {
                 label: "Support Lifecycles",
                 href: "/SupportLifecycles",
               },
-              {label: "Product Licences",
+              {
+                label: "Product Licences",
                 href: "/licences"
               },
               {
@@ -191,6 +191,31 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  markdown: {
+    format: 'mdx',
+    mermaid: true,
+    emoji: true,
+    preprocessor: ({ filePath, fileContent }) => {
+      return fileContent.replaceAll('{{MY_VAR}}', 'MY_VALUE');
+    },
+    parseFrontMatter: async (params) => {
+      const result = await params.defaultParseFrontMatter(params);
+
+      return result;
+    },
+    mdx1Compat: {
+      comments: true,
+      admonitions: true,
+      headingIds: true,
+    },
+    anchors: {
+      maintainCase: true,
+    },
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownImages: 'throw',
+    },
+  },
 };
 
 module.exports = config;
