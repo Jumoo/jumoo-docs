@@ -1,5 +1,6 @@
 {
     "label" : "Get Started",
+    "key": "get-started-usync-12",
     "link": {
         "type": "generated-index",
         "title": "Get Started",
