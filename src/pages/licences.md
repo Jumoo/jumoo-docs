@@ -1,5 +1,5 @@
 ---
-title: Licence Validation.
+title: Product Licences
 ---
 
 # Product Licences
@@ -8,13 +8,12 @@ Our licences are based on long-term support (LTS) versions of Umbraco (e.g v10, 
 
 So, a v13 licence will work with v13, v14, v15 and v16, but you will need to buy an upgrade to get a licence that will work with v17, which is the next LTS release. 
 
-| Date of Purchase | LTS Version | Covered Versions |
+| Release Date | LTS Version | Covered Versions |
 |--|--|--|
 | 16th September 2019 | v8 | v8|
 | 16th June 2022 | v10 | v8 to v10|
 | 14th December 2023 | v13 | v8 to v16|
-| 27th November 2025 | v17 | v8 to v20** |
+| 27th November 2025 | v17 | v8 to v20 |
+| 9th December 2027 | v21 | TBA |
 
 Licences keys are backwards compatable to Umbraco v8, but early versions are [no longer supported](/SupportLifecycles).
-
-***v20 subject to change as these releases are yet to be announced.* 
