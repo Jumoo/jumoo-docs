@@ -1,0 +1,41 @@
+---
+title: Installation
+---
+
+To install uSync.Complete you will first need to have [installed Umbraco.](https://docs.umbraco.com/umbraco-cms/fundamentals/setup/install)
+
+
+## Install via .NET CLI
+If you have [installed your Umbraco site using .NET CLI](https://docs.umbraco.com/umbraco-cms/fundamentals/setup/install/install-umbraco-with-templates), you can also install uSync.Complete from within Visual Studio by running the following command in command-line.
+
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="core"
+  values={[
+    { label: 'Dotnet', value: 'core', },
+    { label: 'Package reference', value: 'ref' }
+  ]
+}>
+<TabItem value="core">
+
+```cli
+dotnet add package uSync.Complete
+```
+
+</TabItem>
+<TabItem value="ref">
+
+```cli
+<PackageReference Include="uSync.Complete" Version="VERSION" />
+```
+
+</TabItem>
+</Tabs>
+
+### Install as package
+:::info
+uSync.Complete v16 is only available as a NuGet package, there is currently no way to install a package directly from the backoffice in Umbraco 16
+:::

@@ -1,0 +1,31 @@
+---
+title: Property Mapping
+---
+
+Translation Manager comes with support for all the core Umbraco text-based property editors, as well as most of the popular 3rd party text-based property editors. However, there may be times when you have custom property editors that are not covered by the core installation.
+
+If you have a custom property editor that stores information in the same format as an existing built in property 
+you can map your custom property to that inbuilt editor. Translation Manager will use that mapper for your values.
+
+In Umbraco the mappings are stored in the appsettings.json file.
+
+```json
+ "mappers": {
+    "inline":{
+      "tags": "img,a",
+      "attributes": "title,alt"
+      "strict": true,
+     }
+  "text":{
+    "text": "string.Empty",
+    }
+  }
+```
+
+
+
+You will be able to see whether you custom mappings have loaded in the Translation Manager *Diagnostics* tab.
+
+
+
+
