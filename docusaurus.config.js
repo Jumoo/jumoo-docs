@@ -36,10 +36,6 @@ const config = {
               label: "v16.x - Umbraco 16",
               banner: "unmaintained",
             },
-            "15.x": {
-              label: "v15.x - Umbraco 15",
-              banner: "unmaintained",
-            },
             "13.x": {
               label: "v13.x - Umbraco 13",
               banner: "unmaintained",
@@ -76,10 +72,6 @@ const config = {
           },
           "16.x": {
             label: "v16.x - Umbraco 16",
-            banner: "unmaintained",
-          },
-          "15.x": {
-            label: "v15.x - Umbraco 15",
             banner: "unmaintained",
           },
           "13.x": {
