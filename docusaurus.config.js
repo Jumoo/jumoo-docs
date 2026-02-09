@@ -161,7 +161,7 @@ const config = {
               },
               {
                 label: "Blog",
-                href: "https://jumoo.co.uk/blog",
+                href: "https://blog.jumoo.co.uk/",
               },
             ],
           },
