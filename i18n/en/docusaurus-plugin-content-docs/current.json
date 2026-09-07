@@ -1,6 +1,6 @@
 {
   "version.label": {
-    "message": "v18.x - Umbraco 18",
+    "message": "Current (v17+)",
     "description": "The label for version current"
   },
   "sidebar.documentationSidebar.category.uSync": {
