@@ -37,4 +37,22 @@ We don't reccomend that you upgrade Translation Manager with jobs in their submi
 
 Usually, upgrades don't change internal data, but occasionally they do, so it is much safer not to have open jobs when you upgrade.
 
+## Upgrading to 17.9.0
+
+### New permissions in 17.9.0
+
+17.9.0 adds two permissions that control who can see the Glossary and Translation Memory screens:
+
+- **View glossary**
+- **View translation memory**
+
+Upgrading grants both to the **Administrators** group automatically. Every other user group has to be given them explicitly, in *Users -> Groups*, even if that group could already see these screens before the upgrade. This is deliberate: it turns what used to come free with access to the Translations section into something you grant on purpose.
+
+A user needs the permission **and** access to the Translations section to see either screen.
+
+### Viewing the Glossary and Memory
+
+Translation Memory moved out of *Settings -> Translation Manager* and into the **Translations** section in 17.9.0, alongside the new Glossary.
+
+If you were signed in to the backoffice while the site upgraded, you may not see the Memory item straight away. The backoffice works out what you are allowed to see when you sign in, so a permission granted by the upgrade does not appear in your session until you sign out and back in. Administrators are not affected. If a Memory or Glossary item is missing for anyone else after an upgrade, sign out and in again before looking any further.
 
