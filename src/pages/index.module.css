@@ -8,8 +8,12 @@
 }
 
 .title {
+  font-family: "Pacifico", var(--font-head);
+  font-weight: 400;
   font-size: var(--step-5);
-  margin-bottom: 1.5rem;
+  line-height: 1.4;
+  color: var(--accent-ink);
+  margin-bottom: 1rem;
 }
 
 .standfirst {
