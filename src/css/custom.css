@@ -1,133 +1,444 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Lato:400,700,900|Barlow|Pacifico|Material+Icons');
+/* ==========================================================================
+   Jumoo docs
+   Tokens are carried over from jumoo.co.uk's design system (simple-site:
+   src/assets/css/site.css) so the docs, blog and site look like one. Keep
+   them in step: change a token there, change it here. The tokens are then
+   mapped onto Infima's variables, and Docusaurus components restyled after.
+   ========================================================================== */
 
-/* stylelint-disable docusaurus/copyright-header */
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* --- Fonts ---------------------------------------------------------------- */
 
-/* You can override the default Infima variables here. */
-:root {
-  /*
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
-  */
-  --ifm-color-primary: #039BE5
-  ;
-  --ifm-color-primary-dark: #0288D1;
-  --ifm-color-primary-darker: #0277BD;
-  --ifm-color-primary-darkest: #01579B;
-  --ifm-color-primary-light: #03A9F4;
-  --ifm-color-primary-lighter: #4FC3F7;
-  --ifm-color-primary-lightest: #B3E5FC;
-
-  --ifm-code-font-size: 95%;
-  --ifm-h1-font-size: 34px;
-
-  /* --ifm-heading-font-family: 'Barlow', 'Open Sans', sans-serif; */
-  --ifm-heading-font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --ifm-heading-font-size: 40px;
-  --ifm-heading-font-weight: 600;
-  --ifm-font-family-base: 'Lato', 'Open Sans', 'Hind Guntur', sans-serif;
-  --ifm-font-size-base: 14pt;
-
-   --ifm-breadcrumb-border-radius: 5px;
-   --ifm-breadcrumb-item-background-active: transparent;
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/barlow-400-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215;
 }
+
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/barlow-600-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215;
+}
+
+/* Pacifico is for the "Jumoo docs" heading on the home page only. */
+@font-face {
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/pacifico-400.woff2") format("woff2");
+}
+
+/* --- Tokens (from jumoo.co.uk)-------------------------------------------- */
+
+:root {
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-head: "Barlow", var(--font-body);
+  --font-mono: ui-monospace, "Cascadia Mono", "SF Mono", Menlo, Consolas, monospace;
+
+  --step--1: clamp(0.83rem, 0.81rem + 0.1vw, 0.89rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.13rem);
+  --step-1: clamp(1.2rem, 1.13rem + 0.35vw, 1.42rem);
+  --step-2: clamp(1.44rem, 1.32rem + 0.6vw, 1.8rem);
+  --step-3: clamp(1.73rem, 1.53rem + 1vw, 2.27rem);
+  --step-4: clamp(2.07rem, 1.75rem + 1.6vw, 2.86rem);
+  --step-5: clamp(2.49rem, 1.98rem + 2.55vw, 3.6rem);
+
+  --radius: 10px;
+  --radius-lg: 16px;
+
+  --page: #f6f7f9;
+  --surface: #ffffff;
+  --surface-2: #eef1f6;
+  --ink: #101a28;
+  --ink-2: #46536a;
+  --ink-3: #6c7a91;
+  --line: #dde3ec;
+  --accent: #2f6fe4;
+  --accent-ink: #1c4899;
+  --accent-wash: #eaf1fe;
+  --buy: #2e7d4f;
+  --buy-ink: #1f5c39;
+  --buy-wash: #e9f5ee;
+  --warn-wash: #fdf4e3;
+  --warn-line: #e9d9ae;
+
+  /* Brand orange: secondary accent, and Translation Manager's colour.
+     --orange is for fills only (3.6:1 on white); use --orange-ink for text. */
+  --orange: #e8590c;
+  --orange-ink: #b4460f;
+  --orange-wash: #fdefe6;
+
+  --shadow: 0 1px 2px rgba(16, 26, 40, 0.06), 0 8px 24px -12px rgba(16, 26, 40, 0.18);
+
+  /* Docs only: admonition edges, and syntax colours (see docusaurus.config.js). */
+  --warn: #c98a12;
+  --danger: #c62828;
+  --danger-wash: #fdecec;
+
+  --code-comment: var(--ink-3);
+  --code-keyword: var(--accent-ink);
+  --code-string: var(--buy-ink);
+  --code-number: var(--orange-ink);
+  --code-function: #7a3fb0;
+  --code-tag: #a02b6f;
+  --code-punct: var(--ink-2);
+}
+
+/* Light is the default (colorMode in docusaurus.config.js ignores the OS
+   preference); this palette applies only once someone picks dark. */
+html[data-theme="dark"] {
+  --page: #0c1118;
+  --surface: #141b25;
+  --surface-2: #1b2431;
+  --ink: #e7edf6;
+  --ink-2: #a9b6c9;
+  --ink-3: #7e8ca2;
+  --line: #26313f;
+  --accent: #6d9dff;
+  --accent-ink: #a8c4ff;
+  --accent-wash: #16233a;
+  --buy: #4bbd7c;
+  --buy-ink: #7ad3a1;
+  --buy-wash: #12251b;
+  --warn-wash: #241f14;
+  --warn-line: #3d3524;
+  --orange: #e8590c;
+  --orange-ink: #e8590c;
+  --orange-wash: #2a1a10;
+
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px -12px rgba(0, 0, 0, 0.6);
+
+  --warn: #d9a43b;
+  --danger: #e5534b;
+  --danger-wash: #2a1416;
+
+  --code-function: #c9a2f2;
+  --code-tag: #f08ac0;
+}
+
+/* --- Tokens onto Infima ---------------------------------------------------- */
+
+:root {
+  --ifm-color-primary: #2f6fe4;
+  --ifm-color-primary-dark: #1e62dc;
+  --ifm-color-primary-darker: #1c5dd0;
+  --ifm-color-primary-darkest: #174cab;
+  --ifm-color-primary-light: #4680e7;
+  --ifm-color-primary-lighter: #5288e8;
+  --ifm-color-primary-lightest: #76a1ed;
+}
+
+html[data-theme="dark"] {
+  --ifm-color-primary: #6d9dff;
+  --ifm-color-primary-dark: #4d87ff;
+  --ifm-color-primary-darker: #3d7cff;
+  --ifm-color-primary-darkest: #0d5cff;
+  --ifm-color-primary-light: #8db3ff;
+  --ifm-color-primary-lighter: #9dbeff;
+  --ifm-color-primary-lightest: #cddeff;
+}
+
+:root,
+html[data-theme="dark"] {
+  --ifm-background-color: var(--page);
+  --ifm-background-surface-color: var(--surface);
+  --ifm-font-color-base: var(--ink);
+  --ifm-font-color-secondary: var(--ink-2);
+  --ifm-heading-color: var(--ink);
+  --ifm-color-content: var(--ink);
+  --ifm-color-content-secondary: var(--ink-2);
+
+  --ifm-font-family-base: var(--font-body);
+  --ifm-heading-font-family: var(--font-head);
+  --ifm-font-family-monospace: var(--font-mono);
+  --ifm-font-size-base: var(--step-0);
+  --ifm-line-height-base: 1.65;
+  --ifm-heading-font-weight: 400;
+  --ifm-heading-line-height: 1.15;
+  --ifm-h1-font-size: var(--step-4);
+  --ifm-h2-font-size: var(--step-3);
+  --ifm-h3-font-size: var(--step-1);
+  --ifm-h4-font-size: var(--step-0);
+
+  --ifm-link-color: var(--accent-ink);
+  --ifm-link-hover-color: var(--accent);
+  --ifm-link-decoration: none;
+  --ifm-global-radius: var(--radius);
+  --ifm-hr-background-color: var(--line);
+  --ifm-toc-border-color: var(--line);
+  --ifm-color-emphasis-300: var(--line);
+  --ifm-table-border-color: var(--line);
+  --ifm-table-stripe-background: var(--surface-2);
+  --ifm-table-head-background: transparent;
+
+  --ifm-code-font-size: 0.9em;
+  --ifm-code-background: var(--surface-2);
+  --ifm-code-border-radius: 5px;
+  --ifm-code-padding-horizontal: 0.4em;
+  --ifm-pre-background: var(--surface-2);
+  --docusaurus-highlighted-code-line-bg: rgba(47, 111, 228, 0.12);
+
+  --ifm-navbar-height: 4.25rem;
+  --ifm-navbar-background-color: var(--surface);
+  --ifm-navbar-link-color: var(--ink-2);
+  --ifm-navbar-link-hover-color: var(--ink);
+  --ifm-navbar-link-active-color: var(--ink);
+  --ifm-navbar-shadow: none;
+
+  --ifm-menu-color: var(--ink-2);
+  --ifm-menu-color-active: var(--accent-ink);
+  --ifm-menu-color-background-active: var(--accent-wash);
+  --ifm-menu-color-background-hover: var(--surface-2);
+
+  --ifm-footer-background-color: var(--surface);
+  --ifm-footer-color: var(--ink-2);
+  --ifm-footer-link-color: var(--ink-2);
+  --ifm-footer-link-hover-color: var(--accent);
+  --ifm-footer-title-color: var(--ink-3);
+
+  --ifm-breadcrumb-border-radius: 999px;
+  --ifm-breadcrumb-item-background-active: var(--accent-wash);
+  --ifm-breadcrumb-color-active: var(--accent-ink);
+
+  --ifm-dropdown-background-color: var(--surface);
+  --ifm-card-background-color: var(--surface);
+
+  /* Admonitions follow the site's .note boxes: a wash with a coloured edge. */
+  --ifm-color-secondary-contrast-background: var(--surface-2);
+  --ifm-color-secondary-contrast-foreground: var(--ink);
+  --ifm-color-secondary-dark: var(--ink-3);
+  --ifm-color-info-contrast-background: var(--accent-wash);
+  --ifm-color-info-contrast-foreground: var(--ink);
+  --ifm-color-info-dark: var(--accent);
+  --ifm-color-success-contrast-background: var(--buy-wash);
+  --ifm-color-success-contrast-foreground: var(--ink);
+  --ifm-color-success-dark: var(--buy);
+  --ifm-color-warning-contrast-background: var(--warn-wash);
+  --ifm-color-warning-contrast-foreground: var(--ink);
+  --ifm-color-warning-dark: var(--warn);
+  --ifm-color-danger-contrast-background: var(--danger-wash);
+  --ifm-color-danger-contrast-foreground: var(--ink);
+  --ifm-color-danger-dark: var(--danger);
+}
+
+/* --- Elements --------------------------------------------------------------- */
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+th {
+  font-family: var(--font-head);
+  font-weight: 600;
+}
+
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+/* Links in prose are underlined, as on jumoo.co.uk; chrome links are not. */
+.markdown a,
+.theme-admonition a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* --- Doc content ------------------------------------------------------------ */
 
 .markdown {
-  --ifm-h2-vertical-rhythm-top: 1;
-}
-
-.markdown h1:first-child {
-  --ifm-h1-font-size: 40px;
-  padding-top: 20px;
+  --ifm-h2-vertical-rhythm-top: 1.6;
 }
 
 .markdown img {
+  display: block;
   margin: 20px auto !important;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
-.markdown h2 {
-  font-size: 1.8rem;
+.markdown blockquote {
+  border-left: 3px solid var(--accent);
+  color: var(--ink-2);
 }
 
-.feature-link {
-  color: var(--ifm-color-emphasis-800) !important;
+.markdown code {
+  border: 0;
+  vertical-align: baseline;
 }
 
-h1, .markdown h2, .markdown h3 {
-  border-bottom: 1px solid;
-  border-bottom-color: var(--ifm-color-emphasis-300);
-  padding: 0.25em 0 0.5em;
-  margin-left: -15px;
- 
+.theme-code-block {
+  border: 1px solid var(--line);
+  box-shadow: none;
 }
 
-.docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.1);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+.theme-code-block [class*="codeBlockTitle"] {
+  border-bottom: 1px solid var(--line) !important;
+  font-family: var(--font-head);
+  font-weight: 600;
 }
 
-html[data-theme='dark'] .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
+.theme-admonition {
+  border: 1px solid var(--line);
+  border-left-width: 4px;
+  border-left-color: var(--ifm-alert-border-color);
+  box-shadow: none;
 }
 
-.markdown img {
-  box-shadow: 0px 0px 5px 3px var(--ifm-color-emphasis-300);
-  display: block;
-  margin: 0 auto;
+.theme-admonition [class*="admonitionHeading"] {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: var(--step--1);
+  letter-spacing: 0.04em;
 }
 
 .theme-edit-this-page {
-  font-style: italic;
-  font-size: smaller;
-
+  font-size: var(--step--1);
 }
 
-a.feature-link {
-  display: block;
-  margin: 1em 0;
-  padding: 2em 0;
+.pagination-nav__link {
+  border-color: var(--line);
+  background: var(--surface);
 }
 
-a.feature-link:hover {
-  text-decoration: none;
-  box-shadow: 0 0 10px #607d8b;
-
+.pagination-nav__link:hover {
+  border-color: var(--accent);
 }
 
-.feature-title {
-  font-size: 40pt;
-  font-style:  normal;
+.pagination-nav__label {
+  font-family: var(--font-head);
+  font-weight: 600;
 }
 
-.hero__title { 
-  font-family: 'Lato';
+.theme-doc-version-banner {
+  --ifm-alert-background-color: var(--warn-wash);
+  border: 1px solid var(--warn-line);
+}
+
+/* --- Navbar ----------------------------------------------------------------- */
+
+.navbar {
+  border-bottom: 1px solid var(--line);
+}
+
+.navbar__logo {
+  height: 2.6rem;
+  margin-right: 0.75rem;
+}
+
+.navbar__title {
+  font-family: var(--font-head);
   font-weight: 400;
-  font-size: 80pt;
-
+  font-size: var(--step-1);
+  color: var(--ink-2);
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--line);
 }
 
-.hero__title {
-  text-transform: lowercase;
-  font-family: 'pacifico'; 
+.navbar__brand:hover .navbar__title {
+  color: var(--accent-ink);
 }
 
-.features_src-components-HomepageFeatures-styles-module h3 {
-  font-weight: 400 !important;
+/* Between the mobile menu and a wide screen the navbar runs out of room:
+   drop the "Docs" title before anything wraps. */
+@media (min-width: 997px) and (max-width: 1199px) {
+  .navbar__title {
+    display: none;
+  }
 }
 
+.navbar__link {
+  white-space: nowrap;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: var(--step--1);
+  letter-spacing: 0.01em;
+}
+
+@media (min-width: 997px) {
+  .navbar__items > .navbar__link {
+    border-bottom: 2px solid transparent;
+  }
+
+  .navbar__items > .navbar__link--active {
+    border-bottom-color: var(--accent);
+  }
+
+  .navbar__items > .nav-product--tm.navbar__link--active {
+    border-bottom-color: var(--orange);
+  }
+}
+
+/* Product lockups: the product badge beside its name in Barlow 600. */
+.nav-product {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Below 997px Infima hides navbar items and shows them in the mobile menu. */
+@media (min-width: 997px) {
+  .navbar__item.nav-product {
+    display: inline-flex;
+  }
+}
+
+.nav-product::before {
+  content: "";
+  flex: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: center / contain no-repeat;
+}
+
+.nav-product--usync::before {
+  background-image: url("/img/brand/usync-badge.svg");
+}
+
+.nav-product--tm::before {
+  background-image: url("/img/brand/translation-manager-badge.svg");
+}
+
+.menu__link.nav-product {
+  display: flex;
+}
+
+.dropdown__menu {
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+[class*="toggleButton"] {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+/* The two version dropdowns share the navbar: show the one for the docs
+   you are in, labelled with its product. */
 .dropdown--right::before {
-  font-weight: 800;
+  font-family: var(--font-head);
+  font-weight: 600;
   margin-right: 10px;
 }
 
@@ -136,7 +447,7 @@ a.feature-link:hover {
 }
 
 .plugin-id-default .dropdown--right:nth-child(1)::before {
-  content: 'uSync';
+  content: "uSync";
 }
 
 .plugin-id-default .dropdown--right:nth-child(2) {
@@ -144,9 +455,17 @@ a.feature-link:hover {
 }
 
 .plugin-id-tm .dropdown--right:nth-child(2)::before {
-  content: 'Translation Manager';
+  content: "Translation Manager";
 }
 
+.theme-doc-version-badge {
+  font-family: var(--font-head);
+  font-weight: 600;
+  background: var(--accent-wash);
+  color: var(--accent-ink);
+  border: 0;
+  border-radius: 999px;
+}
 
 .theme-doc-version-badge::before {
   font-weight: 400;
@@ -154,9 +473,90 @@ a.feature-link:hover {
 }
 
 .plugin-id-default .theme-doc-version-badge::before {
-  content: 'uSync :' ;
+  content: "uSync :";
 }
 
 .plugin-id-tm .theme-doc-version-badge::before {
-  content: 'Translation Manager :' ;
+  content: "Translation Manager :";
+}
+
+/* --- Sidebar and table of contents ------------------------------------------ */
+
+.theme-doc-sidebar-container {
+  border-right-color: var(--line) !important;
+}
+
+.menu {
+  font-size: var(--step--1);
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  font-weight: 600;
+}
+
+/* Translation Manager's docs carry its orange, sparingly: the active page. */
+.plugin-id-tm .theme-doc-sidebar-menu .menu__link--active:not(.menu__link--sublist) {
+  color: var(--orange-ink);
+  background: var(--orange-wash);
+}
+
+.plugin-id-tm .theme-doc-version-badge {
+  background: var(--orange-wash);
+  color: var(--orange-ink);
+}
+
+.table-of-contents {
+  font-size: var(--step--1);
+}
+
+.table-of-contents__link--active {
+  color: var(--accent-ink);
+  font-weight: 600;
+}
+
+/* --- Footer ----------------------------------------------------------------- */
+
+.footer {
+  border-top: 1px solid var(--line);
+  font-size: var(--step--1);
+  padding-top: 4rem;
+}
+
+.footer__title {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: var(--step--1);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.footer__link-item:hover {
+  text-decoration: underline;
+}
+
+.footer__bottom {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.footer__logo {
+  max-width: none;
+  width: auto;
+}
+
+/* Docusaurus fades the footer logo; the site shows the wordmark at full strength. */
+.footer__bottom a[class*="footerLogoLink"] {
+  opacity: 1;
+}
+
+.footer__copyright {
+  color: var(--ink-3);
+}
+
+/* --- Buttons ---------------------------------------------------------------- */
+
+.button {
+  font-family: var(--font-head);
+  font-weight: 600;
 }

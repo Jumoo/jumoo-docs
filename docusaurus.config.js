@@ -1,8 +1,21 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+// One Prism theme for light and dark: every colour is a CSS variable from
+// src/css/custom.css, so the code palette follows the site's tokens and flips
+// with data-theme like everything else.
+const codeTheme = {
+  plain: { color: "var(--ink)", backgroundColor: "var(--surface-2)" },
+  styles: [
+    { types: ["comment", "prolog", "doctype", "cdata"], style: { color: "var(--code-comment)", fontStyle: "italic" } },
+    { types: ["keyword", "selector", "important", "atrule", "builtin"], style: { color: "var(--code-keyword)" } },
+    { types: ["string", "attr-value", "char", "regex", "inserted"], style: { color: "var(--code-string)" } },
+    { types: ["number", "boolean", "constant", "deleted"], style: { color: "var(--code-number)" } },
+    { types: ["function", "class-name"], style: { color: "var(--code-function)" } },
+    { types: ["property", "tag", "symbol", "attr-name", "variable"], style: { color: "var(--code-tag)" } },
+    { types: ["punctuation", "operator"], style: { color: "var(--code-punct)" } },
+  ],
+};
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -11,9 +24,15 @@ const config = {
   url: "https://docs.jumoo.co.uk/",
   baseUrl: "/",
   onBrokenLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/brand/jumoo-badge.svg",
   organizationName: "Jumoo", // Usually your GitHub org/user name.
   projectName: "jumoodocs", // Usually your repo name.
+
+  headTags: [
+    { tagName: "link", attributes: { rel: "icon", href: "/img/brand/jumoo-avatar-32.png", type: "image/png", sizes: "32x32" } },
+    { tagName: "link", attributes: { rel: "apple-touch-icon", href: "/img/brand/jumoo-avatar-256.png" } },
+    { tagName: "link", attributes: { rel: "preload", href: "/fonts/barlow-400-latin.woff2", as: "font", type: "font/woff2", crossorigin: "anonymous" } },
+  ],
 
   presets: [
     [
@@ -86,11 +105,20 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: "img/brand/jumoo-badge-512.png",
+      // Light for everyone by default, whatever the OS prefers (as on
+      // jumoo.co.uk). The navbar toggle still switches to dark.
+      colorMode: {
+        defaultMode: "light",
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
-        title: "JumooDocs",
+        title: "Docs",
         logo: {
-          alt: "jumoo-logo",
-          src: "img/jumoo.png",
+          alt: "Jumoo",
+          src: "img/brand/jumoo-wordmark-blue.svg",
+          srcDark: "img/brand/jumoo-wordmark-dark.svg",
         },
         items: [
           {
@@ -98,6 +126,7 @@ const config = {
             docId: "intro",
             position: "left",
             label: "uSync",
+            className: "nav-product nav-product--usync",
           },
           {
             type: "doc",
@@ -105,6 +134,7 @@ const config = {
             docId: "intro",
             position: "left",
             label: "Translation Manager",
+            className: "nav-product nav-product--tm",
           },
           {
             type: "docsVersionDropdown",
@@ -122,10 +152,22 @@ const config = {
             label: "GitHub",
             position: "right",
           },
+          {
+            href: "https://jumoo.co.uk",
+            label: "jumoo.co.uk",
+            position: "right",
+          },
         ],
       },
       footer: {
-        style: "dark",
+        style: "light",
+        logo: {
+          alt: "Jumoo",
+          src: "img/brand/jumoo-wordmark-blue.svg",
+          srcDark: "img/brand/jumoo-wordmark-dark.svg",
+          href: "https://jumoo.co.uk",
+          height: 44,
+        },
         links: [
           {
             title: "Docs",
@@ -138,28 +180,6 @@ const config = {
                 label: "Translation Manager",
                 to: "/tm/",
               },
-            ],
-          },
-          {
-            title: "About",
-            items: [
-              {
-                label: "Jumoo",
-                href: "https://jumoo.co.uk",
-              },
-              {
-                label: "Products",
-                href: "https://jumoo.co.uk/products.php",
-              },
-              {
-                label: "Blog",
-                href: "https://blog.jumoo.co.uk/",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
               {
                 label: "Support Lifecycles",
                 href: "/SupportLifecycles",
@@ -168,6 +188,40 @@ const config = {
                 label: "Product Licences",
                 href: "/licences"
               },
+            ],
+          },
+          {
+            title: "Products",
+            items: [
+              {
+                label: "uSync",
+                href: "https://jumoo.co.uk/usync/",
+              },
+              {
+                label: "uSync.Complete",
+                href: "https://jumoo.co.uk/usync/complete/",
+              },
+              {
+                label: "Translation Manager",
+                href: "https://jumoo.co.uk/translate/",
+              },
+            ],
+          },
+          {
+            title: "Elsewhere",
+            items: [
+              {
+                label: "jumoo.co.uk",
+                href: "https://jumoo.co.uk",
+              },
+              {
+                label: "Blog",
+                href: "https://blog.jumoo.co.uk/",
+              },
+              {
+                label: "Release notes",
+                href: "https://releases.jumoo.co.uk/",
+              },
               {
                 label: "GitHub",
                 href: "https://github.com/Jumoo/jumoo-docs",
@@ -175,12 +229,12 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Jumoo.`,
+        copyright: `&copy; ${new Date().getFullYear()} Jumoo Ltd. Umbraco is a trademark of Umbraco A/S.`,
       },
       prism: {
         additionalLanguages: ["powershell", "csharp", "bash"],
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: codeTheme,
+        darkTheme: codeTheme,
       },
     }),
   markdown: {
