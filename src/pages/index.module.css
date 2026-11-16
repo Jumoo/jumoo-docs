@@ -1,28 +1,26 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
+/* Home hero, after jumoo.co.uk's: soft blue and orange washes behind a
+   Barlow headline. */
+.hero {
+  padding: 6rem 0 4rem;
+  background:
+    radial-gradient(60rem 30rem at 15% -10%, var(--accent-wash), transparent 70%),
+    radial-gradient(50rem 26rem at 95% 0%, var(--orange-wash), transparent 70%);
+}
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.title {
+  font-size: var(--step-5);
+  margin-bottom: 1.5rem;
+}
+
+.standfirst {
+  font-size: var(--step-2);
+  color: var(--ink-2);
+  max-width: 48ch;
+  margin: 0;
 }
 
 @media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+  .hero {
+    padding: 3rem 0 2rem;
   }
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.hero__title {
-  text-transform: lowercase;
 }
