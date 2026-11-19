@@ -105,7 +105,18 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: "img/brand/jumoo-badge-512.png",
+      // Default share card (1200x630). Docs pages get their product's card
+      // from src/theme/DocItem/Metadata. Regenerate with
+      // node scripts/make-share-images.mjs.
+      image: "img/share/docs.png",
+      metadata: [
+        { property: "og:site_name", content: "Jumoo docs" },
+        { property: "og:type", content: "website" },
+        { property: "og:image:width", content: "1200" },
+        { property: "og:image:height", content: "630" },
+        { property: "og:image:alt", content: "Jumoo docs" },
+        { name: "twitter:image:alt", content: "Jumoo docs" },
+      ],
       // Light for everyone by default, whatever the OS prefers (as on
       // jumoo.co.uk). The navbar toggle still switches to dark.
       colorMode: {
