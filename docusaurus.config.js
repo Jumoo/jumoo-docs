@@ -19,8 +19,8 @@ const codeTheme = {
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Jumoo docs",
-  tagline: "Documentation for jumoo products",
+  title: "jumoo docs",
+  tagline: "Documentation for Jumoo products",
   url: "https://docs.jumoo.co.uk/",
   baseUrl: "/",
   onBrokenLinks: "warn",
