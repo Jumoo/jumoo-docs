@@ -17,11 +17,10 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="Documentation"
+      description="Guides and reference for uSync, uSync.Complete and Translation Manager, Jumoo's Umbraco deployment and translation tools.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
